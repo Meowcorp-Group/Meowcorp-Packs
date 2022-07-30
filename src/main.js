@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import router from './plugins/router'
-import { firestorePlugin } from 'vuefire'
 import { loadFonts } from './plugins/webfontloader'
 
 loadFonts()
@@ -10,8 +9,7 @@ loadFonts()
 const app = createApp(App);
 app.use(router);
 app.use(vuetify);
-app.use(firestorePlugin);
-app.mount('#app')
+app.mount('#app');
 
 // createApp(App)
 //   .use(vuetify)
