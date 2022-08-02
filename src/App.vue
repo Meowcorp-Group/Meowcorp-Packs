@@ -6,6 +6,7 @@ export default {
 		return {
 			drawer: true,
 			loggedIn: true,
+			checkedFilter: []
 		};
 	},
 };
